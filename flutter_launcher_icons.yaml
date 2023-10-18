@@ -1,0 +1,6 @@
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/spellBee.png"
+  adaptive_icon_background: "#ffffff"
+  # min_sdk_android: 21

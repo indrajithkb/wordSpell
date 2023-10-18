@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:texttospeech/screenGameLevel/screen_game_level.dart';
 import 'package:texttospeech/screenHome/bloc/screen_home_bloc.dart';
 import 'package:texttospeech/screenHome/screen_Home.dart';
 
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+
 void main() {
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   runApp(const MyApp());
 }
 
@@ -37,7 +42,9 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: ScreenHome(),
+        home:
+            // ScreenGameLevel()
+            ScreenHome(),
       ),
     );
   }

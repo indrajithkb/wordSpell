@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:texttospeech/screenHome/bloc/screen_home_bloc.dart';
 
@@ -169,6 +170,7 @@ class _ScreenHomeState extends State<ScreenHome> {
 
   @override
   void initState() {
+    FlutterNativeSplash.remove();
     super.initState();
   }
 
